@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = ZipcodeJa::VERSION
   gem.authors       = ["Ryutaro Mizokami"]
   gem.email         = ["suzunatsu@yahoo.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{ZipcodeJa allows you to convert Japanese zipcode into a region.}
+  gem.summary       = %q{Convert a zipcode to region.}
+  gem.homepage      = "https://github.com/mizoR/zipcode_ja"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
