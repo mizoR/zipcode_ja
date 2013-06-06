@@ -1,6 +1,6 @@
 # ZipcodeJa
 
-TODO: Write a gem description
+ZipcodeJa allows you to convert Japanese zipcode into a region.
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+##### Convert a zipcode to region info.
+
+```
+'1310045'.to_region #=> ["13107", "131  ", "1310045", "トウキョウト", "スミダク", "オシアゲ", "東京都", "墨田区", "押上", "0", "0", "1", "0", "0", "0"]
+```
 
 ## Contributing
 
