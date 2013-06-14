@@ -23,6 +23,6 @@ describe ZipcodeJa do
   end
 
   it 'notfound region from zipcode' do
-    expect('986074'.to_region).to eq(nil)
+    expect('9999999'.to_region).to eq(nil)
   end
 end
