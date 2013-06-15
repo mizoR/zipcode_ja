@@ -25,4 +25,16 @@ describe ZipcodeJa do
   it 'notfound region from zipcode' do
     expect('9999999'.to_region).to eq(nil)
   end
+
+  it do
+    ZipcodeJa.instance_eval { @_cache_length = 5 }
+    expect {
+      10.times do |i|
+        ("%0d" % i + '00000').to_region
+      end
+      10.times do |i|
+        ("%0d" % i + '00001').to_region
+      end
+    }.to_not raise_error
+  end
 end
