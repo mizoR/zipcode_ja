@@ -21,7 +21,7 @@ Or install it yourself as:
 ##### Convert a zipcode to region info.
 
 ```
-'1310045'.to_region #=> ["13107", "131  ", "1310045", "トウキョウト", "スミダク", "オシアゲ", "東京都", "墨田区", "押上", "0", "0", "1", "0", "0", "0"]
+'1310045'.to_region #=> {:zipcode=>"1310045", :prefecture_yomi=>"ﾄｳｷｮｳﾄ", :city_yomi=>"ｽﾐﾀﾞｸ", :town_yomi=>"ｵｼｱｹﾞ", :prefecture=>"東京都", :city=>"墨田区", :town=>"押上"}
 ```
 
 ## Contributing
